@@ -15,6 +15,9 @@ Para habilitar el flujo de datos, se implementó un modelo de seguridad basado e
 *   **Política `Logs-lab7`:** Permite la creación y publicación de flujos de registros en CloudWatch.
 *   **Rol de Servicio `Rol-lablogs`:** Utiliza una relación de confianza que permite específicamente al servicio `vpc-flow-logs.amazonaws.com` realizar acciones en la cuenta.
 
+![Creacion de rol de servicio](images/04-flowlogs-trust-policy.png)
+  
+
 ## 🔍 Caso de Uso: Resolución de Incidentes (Troubleshooting)
 Durante el despliegue de la aplicación en el puerto **5749**, se detectó un error de tipo `CONNECTION TIMED OUT`. 
 
