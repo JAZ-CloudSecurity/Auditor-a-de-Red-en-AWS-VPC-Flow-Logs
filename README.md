@@ -13,6 +13,9 @@ Se desplegó una infraestructura compuesta por una VPC con subredes públicas, d
 ## 🛡️ Configuración de Seguridad e IAM
 Para habilitar el flujo de datos, se implementó un modelo de seguridad basado en el principio de menor privilegio:
 *   **Política `Logs-lab7`:** Permite la creación y publicación de flujos de registros en CloudWatch.
+
+![Politica para publicar VPC-flowlogs](images/02-iam-policy.png)
+  
 *   **Rol de Servicio `Rol-lablogs`:** Utiliza una relación de confianza que permite específicamente al servicio `vpc-flow-logs.amazonaws.com` realizar acciones en la cuenta.
 
 ![Creacion de rol de servicio](images/04-flowlogs-trust-policy.png)
