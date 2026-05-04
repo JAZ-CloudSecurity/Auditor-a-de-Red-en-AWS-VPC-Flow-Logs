@@ -42,4 +42,11 @@ Mediante consultas en el grupo de registros `Lablog7`, se identificó el tráfic
 *   **Compute & Docker:** Despliegue de aplicaciones mediante AWS CLI y contenedores.
 
 ---
+### 📂 Proyectos Relacionados
+Este proyecto de auditoría de red forma parte de un ecosistema de seguridad industrial que estoy desarrollando:
+
+*   **[Industrial Cybersecurity - Wazuh SOC](https://github.com/JAZ-CloudSecurity/Industrial-Cybersecurity-Wazuh-SOC)**: Implementación de un centro de monitoreo. 
+    *   *Nota*: Este repositorio de Flow Logs actúa como la fuente de telemetría de red para la ingesta y análisis de eventos en el SOC.
+
+---
 *Este laboratorio forma parte del programa de Arquitectura y Seguridad Cloud.*
