@@ -1,4 +1,4 @@
-# Auditor-a-de-Red-en-AWS-VPC-Flow-Logs
+# Auditoria-de-Red-en-AWS-VPC-Flow-Logs
 
 Este proyecto documenta la implementación de un sistema de auditoría de red en AWS mediante **VPC Flow Logs**. El objetivo es capturar y analizar el tráfico IP que entra y sale de las interfaces de red, permitiendo diagnosticar problemas de conectividad y fortalecer la seguridad perimetral.
 
@@ -30,7 +30,10 @@ Mediante consultas en el grupo de registros `Lablog7`, se identificó el tráfic
 ![Deteccion de Reject en direccion IP](images/08-1-log-analysis-reject.png)
 2.  **Hallazgo:** Los registros confirmaron que los paquetes hacia el puerto 5749 estaban siendo bloqueados sistemáticamente (`REJECT OK`).
    ![Deteccion de Reject](images/08-2-log-analysis-reject.png)
-4.  **Solución:** Este análisis permitió identificar que la falla residía en la configuración de los **Security Groups**, agilizando la corrección de la regla de entrada.
+3.  **Implementacion:** Los Logs fueron almacenados tanto en registros de Cloudwatch, como de S3. A continuación se evidencia su implementación funcional y resultados a partir del despliegue.
+
+  ![Almacenamiento de logs](images/09-s3-logs-storage.png.png) 
+  ![Almacenamiento de logs](images/10-raw-log-content.png) 
 
 ## 🛠️ Tecnologías Utilizadas
 *   **AWS VPC:** Flow Logs, Subnets, Routing Tables.
