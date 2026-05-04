@@ -27,8 +27,10 @@ Durante el despliegue de la aplicación en el puerto **5749**, se detectó un er
 ### Diagnóstico con Flow Logs:
 Mediante consultas en el grupo de registros `Lablog7`, se identificó el tráfico proveniente de la IP del cliente (`181.173.141.185`):
 1.  **Filtro de Tráfico:** Se analizaron los eventos filtrando por la acción `REJECT`.
+![Deteccion de Reject en direccion IP](images/08-1-log-analysis-reject.png)
 2.  **Hallazgo:** Los registros confirmaron que los paquetes hacia el puerto 5749 estaban siendo bloqueados sistemáticamente (`REJECT OK`).
-3.  **Solución:** Este análisis permitió identificar que la falla residía en la configuración de los **Security Groups**, agilizando la corrección de la regla de entrada.
+   ![Deteccion de Reject](images/08-2-log-analysis-reject.png)
+4.  **Solución:** Este análisis permitió identificar que la falla residía en la configuración de los **Security Groups**, agilizando la corrección de la regla de entrada.
 
 ## 🛠️ Tecnologías Utilizadas
 *   **AWS VPC:** Flow Logs, Subnets, Routing Tables.
