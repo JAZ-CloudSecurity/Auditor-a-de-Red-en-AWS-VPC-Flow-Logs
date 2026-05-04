@@ -7,6 +7,9 @@ Se desplegó una infraestructura compuesta por una VPC con subredes públicas, d
 *   **Amazon CloudWatch Logs:** Para análisis operativo y búsqueda de eventos en tiempo real.
 *   **Amazon S3:** Para almacenamiento persistente y cumplimiento normativo.
 
+<img width="871" height="881" alt="Topología Flowlogs drawio" src="https://github.com/user-attachments/assets/59782fc3-9ed9-4f5d-b870-453dfbdcdbe1" />
+
+
 ## 🛡️ Configuración de Seguridad e IAM
 Para habilitar el flujo de datos, se implementó un modelo de seguridad basado en el principio de menor privilegio:
 *   **Política `Logs-lab7`:** Permite la creación y publicación de flujos de registros en CloudWatch.
